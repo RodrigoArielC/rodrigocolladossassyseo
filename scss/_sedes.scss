@@ -1,0 +1,22 @@
+ul{
+    margin: 1px;
+}
+
+#columnasKine{
+    display: flex;
+    justify-content: space-around;
+}
+
+#galeria img{
+    width: 100%;
+    height: $paddingtitulo * 12;
+}
+
+#galeria .col-lg-4{
+    padding: $paddingtitulo  - 5;
+}
+
+#galeria img:hover{
+
+border: 5px solid white;
+}

@@ -1,0 +1,36 @@
+
+
+
+$colortitulo:white;
+$paddingtitulo:25px;
+
+h1{
+   
+    padding: $paddingtitulo;
+     
+}
+
+h2{
+    color: $colortitulo;
+    text-align: center;
+    padding: $paddingtitulo - 10;
+}
+
+h3{
+    color: $colortitulo;
+    text-align: center;
+    padding: $paddingtitulo;
+}
+
+h5{
+    color: $colortitulo;
+    text-align: center;
+    padding: $paddingtitulo;
+}
+
+@for $margin from 1 to 6{
+    #h#{$margin}{
+    width: 1rem *  $margin;
+    color: white;
+    }
+    }

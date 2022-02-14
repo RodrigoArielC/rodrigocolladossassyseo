@@ -1,0 +1,36 @@
+.parrafoIndex{
+    display: flex;
+    flex-direction: column;
+    #textoIndex{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: red;
+        justify-content: center;
+        animation-name: animaciones;
+        color: red;
+        animation-duration: 3s;
+    }
+    }
+
+    .sedesIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-image: linear-gradient( to bottom right, yellow ,rgb(133, 233, 236));
+        padding: $paddingtitulo;
+        span a {
+            text-align: center;
+        }
+    }
+
+    
+.kineIndex{
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+
+
+#columnasKine{
+    display: flex;
+    justify-content: space-around;
+}

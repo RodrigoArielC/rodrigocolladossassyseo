@@ -1,0 +1,118 @@
+.contactosPagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation-name: contactos;
+    animation-iteration-count: inherit;
+    animation-duration: 3s;
+    
+
+
+@keyframes contactos{
+    0%{
+        transform: translatex(30px);
+    
+ }
+
+
+    50%{transform: translatex(250px);
+
+    }
+
+    100%{
+        transform: translate(-30);
+    }
+
+    
+}
+}
+
+#contaco1{
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(rgb(6, 41, 61),rgb(192, 230, 22));
+    
+    padding: $paddingtitulo;
+    margin: $paddingtitulo - 15;}
+
+
+#contacto2{
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(rgb(31, 58, 3),rgb(117, 214, 231));
+    
+    padding: $paddingtitulo ;
+    margin: $paddingtitulo - 15;}
+
+
+#contacto3{
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(rgb(224, 37, 152),rgb(85, 125, 170));
+    
+    padding: 25px;
+    margin: 10px;}
+
+
+#contacto4{
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(rgb(72, 143, 177),rgb(140, 175, 45));
+    
+    padding: 25px;
+    margin: 10px;}
+
+
+#contacto5{
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(rgb(18, 26, 10),rgb(223, 121, 26));
+    
+    padding: 25px;
+    margin: 10px;}
+
+#contacto6{
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(rgb(154, 216, 92),rgb(175, 45, 62));
+    
+    padding: 25px;
+    margin: 10px;}
+
+/*no logre que aplicara en el sitio web,
+probe todo*/
+
+    $coloresContacto:(
+   
+        gmail: blue,
+        whatsapp:red,
+        telefonos:white,
+        twitter:yellow,
+        facebook:green,
+        instagram:brown,
+    
+    );
+    
+    @each $nombre,$color in $coloresContacto {
+        .contactosPagina-#{$nombre} {
+          border: $color;
+            
+        }
+        
+    }
+    @each $nombre,$color in $coloresContacto {
+        .colorete-#{$nombre} {
+          border: $color;
+            
+        }
+        
+    }
+
+    @each $nombre,$color in $coloresContacto {
+        .coloresContactos-#{$nombre} {
+          border: $color;
+            
+        }
+        
+    }
+    
+    
